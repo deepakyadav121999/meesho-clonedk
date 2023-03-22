@@ -1,0 +1,31 @@
+.cartpage_right{
+    border: 0.1px solid rgb(221, 216, 216);
+    height: 200px;
+    width: 300px;
+    position: sticky;
+    top: 200px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+.cartpage_main{
+    display: flex;
+   justify-content: space-around;
+}
+.crtpagettl{
+    margin-top: 30px;
+}
+.ttlbtnprice{
+    background-color: rgb(44, 102, 226);
+    color: white;
+    font-family: sans-serif;
+   height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   padding-top: 5px;
+}
+.spncrtpagettl{
+    text-decoration: line-through;
+}

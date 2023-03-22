@@ -1,0 +1,57 @@
+.item{
+  
+    width: 250px;
+    border: 0.1px solid rgb(173, 172, 172);
+    border-radius: 5%;
+    height: 450px;
+}
+.item_img{
+    height: 250px;
+    width: 250px;
+    border-radius: 5%;
+}
+.item{
+    font-family: sans-serif;
+    text-align: center;
+}
+.productname{
+   color: grey;
+}
+.productprice{
+    font-weight: 700;
+    font-size: 30px;
+}
+.productprice{
+    margin-top: -13px;
+}
+.productdiscount{
+    margin-top: -28px;
+}
+.onwords{
+    color: grey;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+}
+.rate{
+    background-color: rgb(57, 218, 129);
+    width: 70px;
+    height: 35px;
+    text-align: center;
+   color: white;
+   font-family: sans-serif;
+   font-size: 25px;
+   border-radius: 25px;
+   margin-top: -5px;
+   
+}
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item_count{
+    margin-top: -0.1px;
+    color: grey;
+    margin-left: 20px;
+}

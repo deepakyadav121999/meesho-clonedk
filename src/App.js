@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Header from './component/Header';
+import ItemList from './component/ItemList';
+import ItemDescription from './component/ItemDescription'
+import Context from './component/Context';
+import CartPage from './component/CartPage';
+import Signup from './component/Signup';
+import Login from './component/Login';
+import PaymentPage from './component/PaymentPage'
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        
+            <BrowserRouter>
+              <Context>
+            <div className="navbar">
+            <Header/>
+          </div>
+         
+    
+             <Routes>
+               <Route path='/paymentpage' element={<PaymentPage/>}/>
+             <Route path='/' element={<ItemList/>}/>
+             <Route path='/product/:id' element={<ItemDescription/>}/>
+             <Route path='/cart' element={<CartPage/>}/>
+             <Route path='/login' element={<Login/>}/>
+             <Route path='/signup' element={<Signup/>}/>
+            </Routes>
+            </Context>
+            </BrowserRouter>
+          
     </div>
   );
 }

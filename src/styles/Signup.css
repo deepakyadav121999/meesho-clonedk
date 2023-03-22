@@ -1,0 +1,48 @@
+.signup_container{
+    background-color: aqua;
+    height: 500px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+ margin-left: 35%;
+}
+.signup_name,.signup_email,.signup_mobile,.signup_password,.signup_confirmpassword{
+    display: flex;
+}
+.signupipmove{
+    margin-left: 80px;
+}
+.signuppwd{
+    margin-left: 60px;
+}
+.signup_buttons>button{
+    background-color: rgb(149, 58, 235);
+    border: none;
+}
+.signup_btn1{
+    height: 35px;
+    width: 80px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 20px;
+}
+.signup_btn2{
+    background-color: rgb(149, 58, 235);
+    height: 35px;
+     color: white;
+     border-radius: 5px;
+}
+.ipcont{
+    height: 30px;
+    border-radius: 5px;
+    border: 0.1px solid grey;
+    outline: none;
+    
+}
+.signup_error{
+    color: red;
+   margin-top: -20px;
+   margin-left: 100px;
+}

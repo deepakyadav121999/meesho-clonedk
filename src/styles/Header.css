@@ -1,0 +1,102 @@
+.header{
+    display: flex;
+ justify-content: space-between;
+ height: 80px;
+ color: rgb(77, 74, 74);
+  
+}
+.header_left{
+    display: flex;
+align-items: center;
+gap: 30px;
+margin-left: 30px;
+}
+.header_right{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  margin-right: 60px;
+}
+.dnd{
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+.dnd:hover{
+    color: rgb(223, 43, 148);
+}
+
+.input{
+   display: flex;
+   align-items: center;
+   border: 0.1px solid rgb(173, 172, 172);
+   min-height: 48px;
+  min-width: 400px;
+    border-radius: 5px;
+ justify-content: space-around;
+   
+}
+.input>input{
+
+   
+    min-width: 350px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.meesho{
+    color: rgb(223, 43, 148);
+    font-weight: 600;
+    font-size: 40px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   cursor: pointer;
+}
+.icon{
+    color: rgb(131, 125, 125);
+}
+.move{
+    margin-left: 5px;
+}
+.cart>p,.profile>p{
+    margin-top: -5px;
+   
+} 
+p{
+    cursor: pointer;
+}
+.profile:hover{
+    color: rgb(223, 43, 148);
+}
+.header2{
+    display: flex;
+    justify-content: space-around;
+    border-top:  0.1px solid rgb(228, 221, 221);;
+    color: rgb(77, 74, 74);
+}
+.hov:hover{
+    color: rgb(223, 43, 148);
+}
+.cartlink{
+    margin-top: -0.5px;
+   color: rgb(77, 74, 74);
+}
+.move:hover{
+    color: rgb(223, 43, 148);
+  }
+  .pprofile{
+    margin-top: -4px;
+    color: rgb(77, 74, 74);
+  }
+  .movement_head{
+    color: white;
+    text-align: center;
+ margin-left: 25px;
+margin-top: -40px;
+
+background-color:rgb(223, 43, 148);
+width: 20px;
+height: 19px;
+border-radius: 10px;
+
+  }
+  
