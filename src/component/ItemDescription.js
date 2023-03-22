@@ -10,7 +10,7 @@ import StarIcon from '@mui/icons-material/Star';
 
 function ItemDescription() {
 const cart = useContext(DataAppContext)
-const {cartData,setCartData,lth,setlth,total,settotal} =cart
+const {cartData,setCartData,lth,setlth,total,settotal,loginStaus} =cart
   const temp = useParams();
 
 
@@ -36,6 +36,8 @@ const {cartData,setCartData,lth,setlth,total,settotal} =cart
  
 
   return (
+    <>
+    {loginStaus &&
       <div className='itemdiscription'>
           <div className="left_discription">
             <img src={product.image} className='product_image'/>
@@ -72,6 +74,8 @@ const {cartData,setCartData,lth,setlth,total,settotal} =cart
           </div>
         
       </div>
+            }
+            </>
   )
 }
 

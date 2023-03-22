@@ -20,6 +20,7 @@ function Cart(props) {
         <div className="cart_img">
             <img src={props.img} alt="" height={100}/>
         </div>
+        
         <div className='cart-text'>
         <p>{props.name}</p>
         <p>₹ {cartprice}</p>
