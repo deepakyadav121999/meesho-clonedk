@@ -45,15 +45,20 @@ function Header() {
           </div>
   </div>
      <div className="header2">
-      <p className='hov'>Women Ethnic</p>
-      <p  className='hov'>Women Western</p>
-      <p  className='hov'>Men</p>
-      <p  className='hov'>Kids</p>
-      <p  className='hov'>Home & Kitchen</p>
-      <p  className='hov'>Beauty & Health</p>
-      <p  className='hov'>Jwellery & Accessories</p>
-      <p  className='hov'>Bags & Footwear</p>
-      <p  className='hov'>Electronics</p>
+     <Link to={'/womenethinic'} style={{textDecoration: 'none'}}><p className='hov'>Women Ethnic</p></Link>
+     <Link to={'/western'} style={{textDecoration: 'none'}}> <p  className='hov'>Women Western</p></Link>
+     <Link to={'/men'} style={{textDecoration: 'none'}}>  <p  className='hov'>Men</p></Link>
+     <Link to={'/kids'} style={{textDecoration: 'none'}}> <p  className='hov'>Kids</p></Link>
+     <Link to={'/kitchen'} style={{textDecoration: 'none'}}>  <p  className='hov'>Home & Kitchen</p></Link>
+     <Link to={'/health'} style={{textDecoration: 'none'}}>  <p  className='hov'>Beauty & Health</p></Link>
+     <Link to={'/Jwellery'} style={{textDecoration: 'none'}}>    <p  className='hov'>Jwellery & Accessories</p></Link>
+     <Link to={'/Bags'} style={{textDecoration: 'none'}}>      <p  className='hov'>Bags & Footwear</p></Link>
+     <Link to={'/Electronics'} style={{textDecoration: 'none'}}>        <p  className='hov'>Electronics</p></Link>
+     
+    
+   
+    
+    
      </div>
 
 

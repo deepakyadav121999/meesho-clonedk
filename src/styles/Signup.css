@@ -1,5 +1,7 @@
 .signup_container{
-    background-color: aqua;
+    border-radius: 10px;
+    border: 0.2px solid grey;
+    background-color: rgb(247, 243, 239);
     height: 500px;
     width: 450px;
     display: flex;

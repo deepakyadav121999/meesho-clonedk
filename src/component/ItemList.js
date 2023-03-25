@@ -8,7 +8,7 @@ import {DataAppContext} from './Context'
 import Login from './Login'
 function ItemList() {
   const cart = useContext(DataAppContext)
-  const {cartData,setCartData,loginStaus, setLoginStatus} =cart
+  const {cartData,setCartData,loginStaus, setLoginStatus,glcontext,setglcontext} =cart
   const [products, setProducts] = useState([]);
 
   const callApi = async() => {
@@ -16,6 +16,7 @@ function ItemList() {
       const data = await response.json();
     
       setProducts(data);
+      setglcontext(data)
   }
   useEffect(() => {
       callApi();
@@ -27,7 +28,7 @@ function ItemList() {
   <div className="itemlist-container">
                
               {
-                  products && products.map((item, index) => (
+                  glcontext && glcontext.map((item, index) => (
                   
                     <Link to={`/product/${item.id}`} style={{textDecoration: 'none'}}  >
                     <div className="listitem">

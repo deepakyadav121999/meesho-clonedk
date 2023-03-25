@@ -9,6 +9,12 @@ import CartPage from './component/CartPage';
 import Signup from './component/Signup';
 import Login from './component/Login';
 import PaymentPage from './component/PaymentPage'
+import WomanEthinic from './component/WomanEthinic';
+import WomenWestern from './WomenWestern';
+import Men from './component/Men';
+import Jwellary from './component/Jwellary';
+import Bags from './component/Bags';
+import Electronics from './component/Electronics';
 function App() {
 
   return (
@@ -28,6 +34,16 @@ function App() {
              <Route path='/cart' element={<CartPage/>}/>
              <Route path='/login' element={<Login/>}/>
              <Route path='/signup' element={<Signup/>}/>
+
+            <Route path='/womenethinic' element={<WomanEthinic/>}/>
+            <Route path='/western' element={<WomenWestern/>}/>
+            <Route path='/men' element={<Men/>}/>
+            <Route path='/kids' element={<WomenWestern/>}/>
+            <Route path='/health' element={<WomenWestern/>}/>
+            <Route path='/kitchen' element={<WomenWestern/>}/>
+            <Route path='/Jwellery' element={<Jwellary/>}/>
+            <Route path='/bags' element={<Bags/>}/>
+            <Route path='/Electronics' element={<Electronics/>}/>
             </Routes>
             </Context>
             </BrowserRouter>

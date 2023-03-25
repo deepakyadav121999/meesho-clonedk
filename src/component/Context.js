@@ -6,11 +6,12 @@ function Context(props) {
     const[loginStaus, setLoginStatus] =useState(false)
     const[lth,setlth]=useState(0)
     const[total,settotal]=useState(0)
+    const[glcontext,setglcontext] = useState([])
 
   
     return (
       <div>
-          <DataAppContext.Provider value={{cartData,setCartData,loginStaus,setLoginStatus,lth,setlth,total,settotal}}>
+          <DataAppContext.Provider value={{cartData,setCartData,loginStaus,setLoginStatus,lth,setlth,total,settotal,glcontext,setglcontext}}>
             {props.children}
 
            </DataAppContext.Provider>

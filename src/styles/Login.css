@@ -33,12 +33,14 @@
     justify-content: space-around;
 }
 .login_cmp{
-    background-color: aqua;
+   background-color: rgb(247, 243, 239);
     height: 350px;
     width: 300px;
   margin-left: 38%;
   margin-top: 30px;
   padding: 25px;
+ border-radius: 10px;
+ border: 0.2px solid grey;
 }
 .login_button{
   text-align: center;
