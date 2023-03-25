@@ -6,7 +6,7 @@ import {DataAppContext} from './Context'
 import Login from './Login'
 function PaymentPage() {
   const cart = useContext(DataAppContext)
-  const {cartData,setCartData,loginStaus, setLoginStatus} =cart
+  const {loginStaus} =cart
   return (
     <>
 {loginStaus?<div className='ptmpage'>

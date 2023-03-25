@@ -5,7 +5,7 @@ import {DataAppContext} from './Context'
 function Cart(props) {
 
   const cart = useContext(DataAppContext)
-  const {cartData,setCartData,lth,setlth,total,settotal,loginStaus} =cart
+  const {cartData,lth,setlth,total,settotal} =cart
 
   const[cartcount,setCartCount] =useState(1)
   const[cartprice,setcartprice] =useState(props.price)

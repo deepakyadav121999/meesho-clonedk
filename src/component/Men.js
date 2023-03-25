@@ -3,16 +3,18 @@ import { useContext } from "react";
 import {DataAppContext} from './Context'
 import Item from './Item';
 import {Link} from 'react-router-dom'
+import Login from './Login'
 function Men() {
     const cart = useContext(DataAppContext)
-    const {glcontext,setglcontext} =cart
+    const {glcontext,loginStaus} =cart
       
       let dta =  glcontext.filter((item)=>{
           return item.title.includes("Mens")
          })
    
   return (
-    <div className="itemlist-container">   {
+    <>
+    {loginStaus ? <div className="itemlist-container">   {
         dta && dta.map((item,) => (
         
           <Link to={`/product/${item.id}`} style={{textDecoration: 'none'}}  >
@@ -23,7 +25,9 @@ function Men() {
         </div>
         </Link>
         ))
-    }</div>
+    }</div>:<Login/>}
+   
+    </>
   )
 }
 

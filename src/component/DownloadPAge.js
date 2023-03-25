@@ -7,7 +7,7 @@ import {DataAppContext} from './Context'
 
 function DownloadPAge() {
     const cart = useContext(DataAppContext)
-    const {cartData,setCartData,loginStaus, setLoginStatus} =cart
+    const {loginStaus} =cart
   return (
     <>
     {loginStaus && <div className="page">

@@ -6,7 +6,7 @@ import { useContext } from "react";
 import {DataAppContext} from './Context'
 function Login() {
   const cart = useContext(DataAppContext)
-  const {cartData,setCartData,loginStaus, setLoginStatus} =cart
+  const {setLoginStatus} =cart
  
   const[logindetails,setLoginDetails]=useState({
     username:'',

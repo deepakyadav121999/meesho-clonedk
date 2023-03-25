@@ -10,9 +10,7 @@ import {DataAppContext} from './Context'
 
 function Header() {
   const cart = useContext(DataAppContext)
-  const {cartData,setCartData,lth} =cart
-
-
+  const {lth,setsrbar} =cart
 
 
   return (
@@ -21,8 +19,10 @@ function Header() {
           <div className="header_left">
           <Link to={'/'} style={{textDecoration: 'none'}}>  <p className='meesho'>meesho</p></Link>
                 <div className="input">
-                    <SearchIcon className='icon'/>
-                <input type="text" placeholder='Try Saree,Kurti or Search by Product Code'/>
+                <Link to={'search'} style={{textDecoration: 'none'}}>  
+                <SearchIcon className='icon'/>  <input className='iphdd1' type="text" placeholder='Try Saree,Kurti or Search by Product Code' onChange={(e)=>setsrbar(e.target.value)}/></Link>
+                   
+                {/* <input type="text" placeholder='Try Saree,Kurti or Search by Product Code'/> */}
                 </div>
                
           </div>
@@ -34,7 +34,7 @@ function Header() {
               <p>Become a Supplier</p>
               <div className="profile">
                 <PermIdentityIcon className='icon move clr'/>
-                <Link to={'/login'} style={{textDecoration: 'none'}} ><p className='pprofile'>Profile</p></Link>  
+                <Link to={'/profile'} style={{textDecoration: 'none'}} ><p className='pprofile'>Profile</p></Link>  
               </div>
               <div className="cart">
                

@@ -4,14 +4,14 @@ import {DataAppContext} from './Context'
 import Item from './Item';
 import {Link} from 'react-router-dom'
 import Login from './Login'
-function Jwellary() {
+function Search() {
     const cart = useContext(DataAppContext)
-    const {glcontext,loginStaus} =cart
+    const {glcontext,loginStaus,srbar} =cart
       
       let dta =  glcontext.filter((item)=>{
-          return item.category.includes('jewelery')
+          return item.title.toLowerCase().includes(srbar)
          })
-
+  
     return (
       <>
       {loginStaus ? <div className="itemlist-container">   {
@@ -31,4 +31,4 @@ function Jwellary() {
     )
   }
 
-export default Jwellary
+export default Search

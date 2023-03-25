@@ -15,6 +15,8 @@ import Men from './component/Men';
 import Jwellary from './component/Jwellary';
 import Bags from './component/Bags';
 import Electronics from './component/Electronics';
+import Profile from './component/Profile';
+import Search from './component/Search';
 function App() {
 
   return (
@@ -44,6 +46,8 @@ function App() {
             <Route path='/Jwellery' element={<Jwellary/>}/>
             <Route path='/bags' element={<Bags/>}/>
             <Route path='/Electronics' element={<Electronics/>}/>
+            <Route path='/profile' element={<Profile/>}/>
+            <Route path='/search' element={<Search/>}/>
             </Routes>
             </Context>
             </BrowserRouter>

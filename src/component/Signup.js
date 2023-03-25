@@ -1,13 +1,10 @@
 import React, { useState } from 'react'
 import '../styles/Signup.css'
 import{Link } from 'react-router-dom'
-import { useContext } from "react";
-import {DataAppContext} from './Context'
-import Login from './Login'
+
 function Signup() 
 {
-  const cart = useContext(DataAppContext)
-const {cartData,setCartData,loginStaus, setLoginStatus} =cart
+
   const initialValue ={
     name:'',
     email:'',

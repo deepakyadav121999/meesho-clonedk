@@ -8,9 +8,9 @@ import {Link} from 'react-router-dom'
 
 function CartPage() {
     const cart = useContext(DataAppContext)
-const {cartData,setCartData,loginStaus,total,settotal,lth,setlth} =cart
+const {cartData,setCartData,loginStaus,total,settotal,setlth} =cart
  const[beta,setbeta] =useState(false)
-const[cartpagetotle,setcartpagetotle] =useState(0)
+
 
 useEffect(()=>{
   let b=  JSON.parse( localStorage.getItem('products'))

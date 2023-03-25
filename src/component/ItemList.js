@@ -8,7 +8,7 @@ import {DataAppContext} from './Context'
 import Login from './Login'
 function ItemList() {
   const cart = useContext(DataAppContext)
-  const {cartData,setCartData,loginStaus, setLoginStatus,glcontext,setglcontext} =cart
+  const {loginStaus,glcontext,setglcontext} =cart
   const [products, setProducts] = useState([]);
 
   const callApi = async() => {
