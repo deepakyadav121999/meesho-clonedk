@@ -18,11 +18,11 @@ function Login() {
     
    dlt && dlt.map((item)=>{
            if(item.email === logindetails.username && item.password ===logindetails.pwd){
-            console.log('login successfully')
+           
             setLoginStatus(true)
            }
            if(item.email !== logindetails.username && item.password !==logindetails.pwd){
-            console.log('login faild')
+           alert('invalid username or password')
           
            }
           

@@ -17,6 +17,17 @@ useEffect(()=>{
   b &&  setCartData(b)
 },[beta])
 
+const alft =()=>{
+  if(total>0){
+    localStorage.removeItem('products')
+    setCartData('')
+    settotal(0)
+    setlth(0)
+  }
+  else{
+    alert('you dont have any product to by')
+  }
+}
 
   return (
     <>
@@ -39,14 +50,9 @@ useEffect(()=>{
            <p className='crtpagettl'>Total Price: ₹{total &&(parseInt(total, 10))}</p>
            <p className='crtpagettl'>Total Discount: ₹100 
            </p>
-           <p>Total you have to pay <span className='spncrtpagettl'>₹{total &&(parseInt(total, 10))}</span> <span>₹{total &&(parseInt(total, 10))-10}</span></p>
+           <p>Total you have to pay <span className='spncrtpagettl'>₹{total &&(parseInt(total, 10))}</span> <span>₹{total && (parseInt(total, 10))-10}</span></p>
            <Link to={'/paymentpage'} style={{textDecoration: 'none'}} >
-            <p className='ttlbtnprice' onClick={()=>{
-              localStorage.removeItem('products')
-              setCartData('')
-              settotal(0)
-              setlth(0)
-            }}> Proceed To Checkout</p>
+            <p className='ttlbtnprice' onClick={alft}> Proceed To Checkout</p>
            </Link>
            </div>
      </div>:<Login/> 
