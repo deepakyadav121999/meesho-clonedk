@@ -21,9 +21,9 @@ function Login() {
            
             setLoginStatus(true)
            }
-           if(item.email !== logindetails.username && item.password !==logindetails.pwd){
+           if(item.email !== logindetails.username || item.password !==logindetails.pwd || item.email !==null &&item.password !==null){
            alert('invalid username or password')
-          
+        
            }
           
     })
