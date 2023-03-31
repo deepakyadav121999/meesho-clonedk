@@ -21,10 +21,7 @@ function Login() {
            
             setLoginStatus(true)
            }
-           else(item.email !== logindetails.username || item.password !==logindetails.pwd || item.email !==null &&item.password !==null){
-           alert('invalid username or password')
-           setLoginStatus(false)
-           }
+          
           
     })
   
