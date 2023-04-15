@@ -6,6 +6,7 @@
     font-family: sans-serif;
     color: rgb(96, 96, 100);
     font-weight: 600;
+    margin-top: 50px;
 }
 .boxifoo{
   height: 300px;
@@ -45,7 +46,7 @@
 }
 .foo1insider>img{
     height: 50px;
-    width: 150px;
+    width: 180px;
 }
 .boxifoo1{
  margin-left: 10px;
