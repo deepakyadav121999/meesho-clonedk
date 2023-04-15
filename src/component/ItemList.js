@@ -5,6 +5,7 @@ import{Link}from 'react-router-dom'
 import DownloadPAge from './DownloadPAge.js'
 import { useContext } from "react";
 import {DataAppContext} from './Context'
+import MoreAboutMeesho from './MoreAboutMeesho'
 import Login from './Login'
 function ItemList() {
   const cart = useContext(DataAppContext)
@@ -40,8 +41,8 @@ function ItemList() {
                   ))
               }
               </div>:<Login/>}
-  
-           
+              {loginStaus &&    
+           < MoreAboutMeesho/>}
      </>
   )
 }

@@ -9,7 +9,7 @@ function Footer() {
 <div className="footer-container">
  <div className="foo1 boxifoo1">
  <p className='foo_heading'>Shop Non-Stop on Meesho</p>
- <p>Trusted by more than 1 Crore Indians
+ <p className='smallfoo'>Trusted by more than 1 Crore Indians
 Cash on Delivery | Free Delivery</p>
 <div className="foo1insider">
     <img src="https://images.meesho.com/images/pow/playstore-icon-big.png" alt="" />
@@ -41,7 +41,7 @@ Cash on Delivery | Free Delivery</p>
   </div>
   <div className="foo5 boxifoo">
    <p className='mfoo-head'>Contact Us</p>
-    <p>Fasnear Technologies Private Limited CIN:U74900KA2015PTC082263
+    <p className='smallfoo'>Fasnear Technologies Private Limited CIN:U74900KA2015PTC082263
 06-105-B, 06-102, (138 Wu) Vaishnavi Signature, No. 78/9, Outer Ring Road, Bellandur, Varthur Hobli, Bengaluru-560103, Karnataka, India
 E-mail address: query@meesho.com
 © 2015-2022 Meesho.com</p>
