@@ -9,6 +9,7 @@ import StarIcon from '@mui/icons-material/Star';
 
 
 function ItemDescription() {
+  const[addcrtbtn ,setadcrtbtn] = useState('Add To Cart')
 const cart = useContext(DataAppContext)
 const {lth,setlth,total,settotal,loginStaus} =cart
   const temp = useParams();
@@ -24,6 +25,7 @@ const {lth,setlth,total,settotal,loginStaus} =cart
       setProduct(data);
     
   }
+
 
   useEffect(() => {
    
@@ -50,8 +52,8 @@ const {lth,setlth,total,settotal,loginStaus} =cart
               
                 setlth(lth+1)
                  settotal(total+product.price)
-                 
-                }}><AddShoppingCartIcon  className='spnprdbtn'/><span>Add To Cart</span></button>
+               
+                }}><AddShoppingCartIcon  className='spnprdbtn'/><span>{addcrtbtn}</span></button>
                 
           </div>
           <div className="right_discription">
